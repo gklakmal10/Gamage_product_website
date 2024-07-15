@@ -1,0 +1,260 @@
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="=x-UA-compatible" content="IE-edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Chili Pices page design</title>
+
+     <!--font awesome cdn link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+     <!--css file link-->
+
+     <link rel="stylesheet" href="spices website.css">
+   
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+
+    <header>
+
+        <input type="checkbox" name ="" id = "toggler">
+
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">Gamage Products<span></span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="spices website about page.html">About us</a>
+            <a href="spices website product page.html">Products</a>
+            
+            <a href="spices website contact page.html">contact</a>
+
+        </nav>
+
+
+
+        <div class="input-box">
+
+            <input type="text" placeholder="       type something...." class="input2">
+                
+                <span class="icon">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </span>
+                <i class="fa-solid fa-xmark close-icon"></i>
+                        
+        </div>
+
+        <!--search bar js...........................................................-->
+    
+        <script>
+
+            let inputBox = document.querySelector(".input-box"),
+                searchIcon = document.querySelector(".icon"),
+                closeIcon = document.querySelector(".close-icon");
+    
+            searchIcon.addEventListener("click", () => inputBox.classList.add("open"));
+            closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
+
+        </script>
+
+
+        <!--profile..................................................................-->
+
+        <div>
+
+            <img src="boy.png" class="userpic" onclick="togglemenu()">
+
+            <div class="sub-menu-wrap" id="sub-menu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="boy.png">
+                        <h3> Lakmal premathilaka</h3>
+                    </div>
+
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="user.png">
+                        <p>edit profile</p>
+                        
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="setting.png">
+                        <p>settings & privacy</p>
+                        
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="help.png">
+                        <p>help & support</p>
+                        
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="logout.png">
+                        <p>log out</p>
+                        
+                    </a>
+                    
+                </div>
+            </div>
+                
+        </div>
+
+    <!--profile js...........................................................-->
+
+     <script>
+        let submenu = document.getElementById("sub-menu");
+
+        function togglemenu(){
+            submenu.classList.toggle("open-menu");
+        }
+
+    </script> 
+
+    </header>
+
+
+     <!-- product section starts -->
+
+     <section class="Products" id="Products">
+
+        <br><br><br><br><br><br><br>
+        <h1 class="chili_header"> chili <span>pices</span></h1><br><br><br>
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">50g</span>
+                <div class="image">
+                    <img src="chili pices.png" alt="">
+                    <div class="icons">
+
+                        
+                        <a href="checkout page.html">order now</a>
+                        
+                    </div>
+                </div>
+                    <div class="content">
+                        <h3>Chili Pices</h3>
+                        <div class="price">Rs:140.00 <span>Rs:148.00</span></div>
+                    </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">100g</span>
+                <div class="image">
+                    <img src="chili pices.png" alt="">
+                    <div class="icons">
+
+                        
+                        <a href="checkout page.html">order now</a>
+                    </div>
+                </div>
+                    <div class="content">
+                        <h3>Chili Pices</h3>
+                        <div class="price">Rs:265.00 <span>Rs:285.00</span></div>
+                    </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">250g</span>
+                <div class="image">
+                    <img src="chili pices.png" alt="">
+                    <div class="icons">
+
+                        
+                        <a href="checkout page.html">order now</a>
+                    </div>
+                </div>
+                    <div class="content">
+                        <h3>Chili Pieces</h3>
+                        <div class="price">Rs:530.00 <span>Rs:549.00</span></div>
+                        <div class="out_of_stock">out of stock</div>
+                    </div>
+            </div>
+
+        </div>
+
+
+     </section>
+
+     <section class="back_button_section" id="back_button_section">
+
+        <h1 class="back_button"><a href="spices website product page.html" class="botton1">  back </a></h1>
+     
+    </section>
+
+
+    <!-- product section end -->
+
+   
+</body>
+
+
+    <!--footer section starts-->
+    
+    <section class="footer">
+
+        <div class="box-container">
+
+          <div class="box">
+
+            <h3>gamage products</h3>
+              <a>
+                Gamage Products is working to  conquer the business world by providing fresh and reliable spices to the customers, becoming a new life in the local spices market.
+              </a>
+              
+              
+          </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">Home</a>
+            <a href="spices website about page.html">About us</a>
+            <a href="spices website product page.html">Products</a>
+            
+            <a href="spices website contact page.html">contact</a>
+            </div>
+    
+
+  
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fa-solid fa-phone"></i> +94740982756</a>
+                <a href="#"> <i class="fa-solid fa-envelope"></i> gamageproducts862@gmail.com</a>
+                <a href="#"> <i class="fa-solid fa-house"></i> kuttapitiya, pelmadulla</a>
+                
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+
+                <div class="social-icons">
+
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+                
+                
+            </div>
+    
+        </div>
+    
+        <div class="credit"> created by <span> gamage products </span> | all rights reserved </div>
+    
+    </section>
+
+    <!--footer section end-->
+
+
+</html>

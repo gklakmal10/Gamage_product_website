@@ -1,0 +1,310 @@
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="=x-UA-compatible" content="IE-edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>spices website home page design</title>
+
+     <!--font awesome cdn link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+     <!--css file link-->
+
+     <link rel="stylesheet" href="spices website.css">
+
+
+     <!--java file link-->
+    
+     
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+
+    <header>
+
+        <input type="checkbox" name ="" id = "toggler">
+
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">Gamage Products<span></span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="spices website about page.html">About us</a>
+            <a href="spices website product page.html">Products</a>
+            
+            <a href="spices website contact page.html">contact</a>
+
+        </nav>
+
+        <!--search bar------>
+
+
+        <div class="input-box">
+
+            <input type="text" placeholder="       type something...." class="input2">
+                
+                <span class="icon">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </span>
+                <i class="fa-solid fa-xmark close-icon"></i>
+                        
+        </div>
+
+        <!--search bar js...........................................................-->
+    
+        <script>
+
+            let inputBox = document.querySelector(".input-box"),
+                searchIcon = document.querySelector(".icon"),
+                closeIcon = document.querySelector(".close-icon");
+    
+            searchIcon.addEventListener("click", () => inputBox.classList.add("open"));
+            closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
+
+        </script>
+
+            
+
+        <!--profile..................................................................-->
+
+        <div>
+
+            <img src="boy.png" class="userpic" onclick="togglemenu()">
+
+            <div class="sub-menu-wrap" id="sub-menu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="boy.png">
+                        <h3> Lakmal premathilaka</h3>
+                    </div>
+
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="user.png">
+                        <p>edit profile</p>
+                        
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="setting.png">
+                        <p>settings & privacy</p>
+                        
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="help.png">
+                        <p>help & support</p>
+                        
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="logout.png">
+                        <p>log out</p>
+                        
+                    </a>
+                    
+                </div>
+            </div>
+                
+        </div>
+
+    <!--profile js...........................................................-->
+
+     <script>
+        let submenu = document.getElementById("sub-menu");
+
+        function togglemenu(){
+            submenu.classList.toggle("open-menu");
+        }
+
+    </script> 
+
+    </header>
+
+    <!-- header section ends -->
+
+
+
+    <!--checkout section starts-->
+
+    <section class="check_out" id="check_out">
+        
+        <br><br><br><br><br><br><br>
+        <h1 class="heading"><span>check</span> out</h1><br>
+
+
+        <div class="notice">
+                
+            <p>These days the online payment process through our website has been stopped and you can contact us through WhatsApp and get details about the payment related to the order.</p><br><br>
+                
+            </div>
+
+            <div class="check_out_row">
+                <div class="Payment_check">
+                  <div class="container">
+                    <form action="">
+                    
+                      <div class="check_out_row">
+
+                        <div class="bill_data">
+
+                          <br><h3>Billing Address</h3><br><br>
+                          <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                          <input type="text" id="fname" name="firstname" placeholder="g.dinelka sandakalum" required >
+
+                          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                          <input type="text" id="email" name="email" placeholder="dinelka@example.com" required >
+
+                          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                          <input type="text" id="adr" name="address" placeholder="112/a, kahangama " required >
+
+                          <label for="city"><i class="fa fa-institution"></i> City</label>
+                          <input type="text" id="city" name="city" placeholder="rathnapura" required >
+              
+                          <div class="check_out_row">
+
+                            <div class="bill_data">
+                              <label for="state">State</label>
+                              <input type="text" id="state" name="state" placeholder="sabaragamuwa" required >
+                            </div>
+
+                            <div class="bill_data">
+                              <label for="zip">Zip</label>
+                              <input type="text" id="zip" name="zip" placeholder="70070" required >
+                            </div>
+
+                          </div>
+                        </div>
+              
+                        <div class="bill_data">
+                          <br><h3>Payment</h3><br><br>
+                          <label for="fname">Accepted Cards</label>
+                          <div class="icon-container">
+                            <i class="fa-brands fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa-brands fa-cc-mastercard" style="color:rgb(247, 6, 6);"></i>
+                            <i class="fa-brands fa-cc-paypal" style="color:rgb(74, 74, 240);"></i>
+                     
+                          </div>
+
+                          <label for="cname">Name on Card</label>
+                          <input type="text" id="cname" name="cardname" placeholder="dinelka sandakalum" required >
+
+                          <label for="ccnum">Credit card number</label>
+                          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required >
+
+                          <label for="expmonth">Exp Month</label>
+                          <input type="text" id="expmonth" name="expmonth" placeholder="april" required >
+
+                          <div class="check_out_row">
+
+                            <div class="bill_data">
+
+                              <label for="expyear">Exp Year</label>
+                              <input type="text" id="expyear" name="expyear" placeholder="2022" required >
+                            </div>
+
+                            <div class="bill_data">
+                              <label for="cvv">CVV</label>
+                              <input type="text" id="cvv" name="cvv" placeholder="442" required >
+                            </div>
+
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing address
+                      </label>
+                      <input type="submit" value="Continue to Payment" class="check_button">
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+    </section>
+
+    <section class="chat">
+        <div>
+
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/0740982756"> <img alt="Chat on WhatsApp" src="chat on whatsapp.png" class="chat"/>
+
+        </div>
+    </section>
+
+    <!--checkout section starts-->
+
+</body>
+
+
+    
+
+    <!--footer section starts-->
+    
+    <section class="footer">
+
+        <div class="box-container">
+
+          <div class="box">
+
+            <h3>gamage products</h3>
+              <a>
+                Gamage Products is working to  conquer the business world by providing fresh and reliable spices to the customers, becoming a new life in the local spices market.
+              </a>
+              
+              
+          </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">Home</a>
+            <a href="spices website about page.html">About us</a>
+            <a href="spices website product page.html">Products</a>
+            
+            <a href="spices website contact page.html">contact</a>
+            </div>
+    
+
+  
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fa-solid fa-phone"></i> +94740982756</a>
+                <a href="#"> <i class="fa-solid fa-envelope"></i> gamageproducts862@gmail.com</a>
+                <a href="#"> <i class="fa-solid fa-house"></i> kuttapitiya, pelmadulla</a>
+                
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+
+                <div class="social-icons">
+
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+                
+                
+            </div>
+    
+        </div>
+    
+        <div class="credit"> created by <span> gamage products </span> | all rights reserved </div>
+    
+    </section>
+
+    <!--footer section end-->
+
+
+
+
+
+
+
+</html>
