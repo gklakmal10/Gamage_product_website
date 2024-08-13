@@ -31,7 +31,7 @@ Gamage Product Website is a fully responsive e-commerce platform built using HTM
 
 ### Product Section
 
-![Productsection](image/product.PNG)
+![Productsection](image/Product.PNG)
 
 ### Checkout Section
 
